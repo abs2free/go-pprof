@@ -26,7 +26,7 @@ bench-web:
 
 
 pre-fire:
-	go get -u github.com/google/pprof
+	go install github.com/google/pprof@latest
 
 fire-view:
 	pprof -http=:8080 cpu.prof
